@@ -83,10 +83,15 @@ var stopAngryBlock
 		angryBlockTime = angryBlockArray[rand]
 		
 	}, angryBlockTime+2000)*/
+	/*document.addEventListener('keydown', function(e) {
+    button1.click();
+		
+});*/
 button1.onkeydown = press
 	function press(event){
 	var code = event.keyCode
 	if(code==38){
+		alert('sdfdf')
 	powerFuncU()
 	}
 	}	
