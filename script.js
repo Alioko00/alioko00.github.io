@@ -89,6 +89,7 @@ var stopAngryBlock
 });*/
 button1.onkeydown = press
 	function press(event){
+		alert('sdfdf')
 	var code = event.keyCode
 	if(code==38){
 		alert('sdfdf')
