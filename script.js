@@ -92,9 +92,10 @@ button1.onkeydown = press
 		
 	var code = event.keyCode
 	alert(code)
-	if(code=='38'){
-		alert('sdfdf')
+	if(code=='38'){	
 	powerFuncU()
+	} else if(code=='39'){	
+	powerFuncR()
 	}
 	}	
 function pusk() {
