@@ -116,7 +116,7 @@ powerFunc0 =function func0(){
 	function press(event){
 	var code = event.keyCode
 	if(code==38){
-	funcU()
+	powerFuncU()
 	}
 	}
 stopAngryBlock = window.setInterval(function() {
