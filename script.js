@@ -1,4 +1,4 @@
-var powerFunc0;
+﻿var powerFunc0;
 var powerFuncR;
 var powerFuncL;
 var powerFuncD;
@@ -23,7 +23,7 @@ var stopL
 var stopMove
 var clearExtr
 	//var test1 = document.getElementById("test1")
-	var test2 = document.getElementById("test2")
+	var test2 = document.getElementById("test2");
 	var test3 = document.getElementById("test3")
 	var test4 = document.getElementById("test4")
 	var test5 = document.getElementById("test5")
@@ -37,7 +37,7 @@ var button0 = document.getElementById("but0")
 	var test3a = document.getElementById("test3a")
 	var dsetLeft = Number(test1.dataset.left)
 	var dsetTop = Number(test1.dataset.top)
-var testMove
+var testMove = 3
 var speed = 150
 var maskGreen = document.getElementById("maskGreen")
 var maskRed = document.getElementById("maskRed")
@@ -87,17 +87,6 @@ var stopAngryBlock
     button1.click();
 		
 });*/
-button1.onkeydown = press
-	function press(event){
-		
-	var code = event.keyCode
-	alert(code)
-	if(code==38){	
-	powerFuncU()
-	} else if(code==39){	
-	powerFuncR()
-	}
-	}	
 function pusk() {
 	var now = (new Date).getTime();
   		if( next  &&  next > now) return;
@@ -123,10 +112,26 @@ function pusk() {
 	var angryBlockArray = [50000, 120000, 160000, 30000]
 	
 }*/
+
+button0.onkeydown = press
+	function press(event){
+		
+	var code = event.keyCode
+
+	if(code==38){	
+	powerFuncU()
+	} else if(code==39){	
+	powerFuncR()
+	} else if(code==37){	
+	powerFuncL()
+	} else if(code==40){	
+	powerFuncD()
+}
+}		
 	
 	
 powerFunc0 =function func0(){
-	
+
 stopAngryBlock = window.setInterval(function() {
 	var now2 = (new Date).getTime();
   	if( next2  &&  next2 > now2) return;
@@ -651,6 +656,7 @@ function funcNew(){ 				/*Создание координат черных бл�
 		elems1 = Number(elems.length)-1
 	
 	
+
 	var boxL = []
 	var boxT = []
 	for (var i=0, j=0 ;i<=34, j<=340; i++, j=j+10){
