@@ -89,7 +89,7 @@ var stopAngryBlock
 });*/
 button1.onkeydown = press
 	function press(event){
-		
+		alert(code)
 	var code = event.keyCode
 	alert(code)
 	if(code==38){
