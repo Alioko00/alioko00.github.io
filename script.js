@@ -112,7 +112,7 @@ function pusk() {
 	
 	
 powerFunc0 =function func0(){
-  input.onpresskey = press
+  input.onkeypress = press
 	function press(event){
 	var code = event.keyCode
 	if(code==38){
