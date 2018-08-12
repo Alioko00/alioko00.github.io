@@ -91,6 +91,7 @@ button1.onkeydown = press
 	function press(event){
 		
 	var code = event.keyCode
+	alert(code)
 	if(code==38){
 		alert('sdfdf')
 	powerFuncU()
