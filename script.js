@@ -112,13 +112,13 @@ function pusk() {
 	
 	
 powerFunc0 =function func0(){
-  button1.onkeypress = funcU
-	/*function press(event){
+  button1.onkeypress = press
+	function press(event){
 	var code = event.keyCode
 	if(code==38){
 	funcU()
 	}
-	}*/
+	}
 stopAngryBlock = window.setInterval(function() {
 	var now2 = (new Date).getTime();
   	if( next2  &&  next2 > now2) return;
